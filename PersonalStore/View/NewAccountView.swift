@@ -17,6 +17,7 @@ struct NewAccountView: View {
             VStack {
                 TextField("Email Address", text: $address)
                     .padding(5)
+                    .keyboardType(.emailAddress)
                 HStack {
                     TextField("API Key", text: $apiKey) { editingChange in
                         if(editingChange) {

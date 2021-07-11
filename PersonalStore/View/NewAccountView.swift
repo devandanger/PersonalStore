@@ -9,6 +9,8 @@ import SwiftUI
 
 struct NewAccountView: View {
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.managedObjectContext) private var viewContext
+
     @State var address: String = ""
     @State var apiKey: String = ""
     @State var showCamera: Bool = false
@@ -36,6 +38,18 @@ struct NewAccountView: View {
             CameraView(showCamera: $showCamera, scanned: $apiKey)
         })
         .navigationBarItems(trailing: Button(action: {
+            let newAccount = Account(context: viewContext)
+            newAccount.apiKey = self.apiKey
+            newAccount.emailAddress = self.address
+            do {
+                try viewContext.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+            
             presentationMode.wrappedValue.dismiss()
         }, label: {
             Text("Save")

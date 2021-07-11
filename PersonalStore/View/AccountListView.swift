@@ -26,7 +26,8 @@ struct AccountListView: View {
         .navigationTitle("Accounts")
         .navigationBarItems(trailing: HStack {
             NavigationLink(
-                destination: NewAccountView(),
+                destination: NewAccountView()
+                    .environment(\.managedObjectContext, viewContext),
                 label: {
                     Text("New")
                 })

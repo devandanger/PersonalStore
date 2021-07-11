@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NewAccountView: View {
+    @Environment(\.presentationMode) var presentationMode
     @State var address: String = ""
     @State var apiKey: String = ""
     
@@ -35,6 +36,11 @@ struct NewAccountView: View {
         }.sheet(isPresented: $showCamera, content: {
             CameraView(showCamera: $showCamera, scanned: $apiKey)
         })
+        .navigationBarItems(trailing: Button(action: {
+            presentationMode.wrappedValue.dismiss()
+        }, label: {
+            Text("Save")
+        }))
     }
 }
 

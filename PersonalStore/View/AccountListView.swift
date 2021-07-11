@@ -11,15 +11,15 @@ import CoreData
 struct AccountListView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Account.emailAddress, ascending: true)],
         animation: .default
     )
-    private var items: FetchedResults<Item>
+    private var items: FetchedResults<Account>
 
     var body: some View {
         List {
             ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                Text("\(item.emailAddress!)")
             }
             .onDelete(perform: deleteItems)
         }

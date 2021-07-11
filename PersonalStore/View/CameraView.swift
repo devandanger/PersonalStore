@@ -8,18 +8,6 @@
 import SwiftUI
 
 
-struct BarScanView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
-}
-
-struct BarScanView_Previews: PreviewProvider {
-    static var previews: some View {
-        BarScanView()
-    }
-}
-
 import UIKit
 import AVFoundation
 

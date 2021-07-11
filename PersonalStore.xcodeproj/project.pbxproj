@@ -17,7 +17,7 @@
 		20AEBA752699533500E5C087 /* PersonalStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEBA742699533500E5C087 /* PersonalStoreUITests.swift */; };
 		20AEBA862699581600E5C087 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEBA852699581600E5C087 /* AppListView.swift */; };
 		20AEBA88269958AE00E5C087 /* AppRetrievalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEBA87269958AD00E5C087 /* AppRetrievalModel.swift */; };
-		20AEBA8B26995D8100E5C087 /* BarScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEBA8A26995D8100E5C087 /* BarScanView.swift */; };
+		20AEBA8B26995D8100E5C087 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEBA8A26995D8100E5C087 /* CameraView.swift */; };
 		20AEBA8D2699662600E5C087 /* NewAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEBA8C2699662600E5C087 /* NewAccountView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 		20AEBA762699533500E5C087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20AEBA852699581600E5C087 /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
 		20AEBA87269958AD00E5C087 /* AppRetrievalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRetrievalModel.swift; sourceTree = "<group>"; };
-		20AEBA8A26995D8100E5C087 /* BarScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarScanView.swift; sourceTree = "<group>"; };
+		20AEBA8A26995D8100E5C087 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		20AEBA8C2699662600E5C087 /* NewAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,7 +148,7 @@
 			children = (
 				20AEBA542699533200E5C087 /* AccountListView.swift */,
 				20AEBA852699581600E5C087 /* AppListView.swift */,
-				20AEBA8A26995D8100E5C087 /* BarScanView.swift */,
+				20AEBA8A26995D8100E5C087 /* CameraView.swift */,
 				20AEBA8C2699662600E5C087 /* NewAccountView.swift */,
 			);
 			path = View;
@@ -307,7 +307,7 @@
 				20AEBA552699533200E5C087 /* AccountListView.swift in Sources */,
 				20AEBA532699533200E5C087 /* PersonalStoreApp.swift in Sources */,
 				20AEBA5F2699533400E5C087 /* PersonalStore.xcdatamodeld in Sources */,
-				20AEBA8B26995D8100E5C087 /* BarScanView.swift in Sources */,
+				20AEBA8B26995D8100E5C087 /* CameraView.swift in Sources */,
 				20AEBA862699581600E5C087 /* AppListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

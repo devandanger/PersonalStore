@@ -11,7 +11,6 @@ struct NewAccountView: View {
     @Environment(\.presentationMode) var presentationMode
     @State var address: String = ""
     @State var apiKey: String = ""
-    
     @State var showCamera: Bool = false
     var body: some View {
         NavigationView {
@@ -40,7 +39,8 @@ struct NewAccountView: View {
             presentationMode.wrappedValue.dismiss()
         }, label: {
             Text("Save")
-        }))
+        }).disabled(address.isEmpty || apiKey.isEmpty))
+        
     }
 }
 
